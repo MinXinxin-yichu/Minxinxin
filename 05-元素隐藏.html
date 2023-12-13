@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border: 4px solid green;
+        /* 方式1【重点掌握】：隐藏元素，不占位置，结构还在页面中 */
+         display: none;
+
+        /* 方式2：隐藏元素，要占位置，结构还在页面中 */
+        /* visibility: hidden; */
+
+        /* 方式3：设置透明度，要占位置，结构还在页面中 */
+        /* opacity: 0.5; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">迪迦奥特曼</div>
+    <h2>我是h2</h2>
+  </body>
+</html>

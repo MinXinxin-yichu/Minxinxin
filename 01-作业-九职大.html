@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Microsoft YaHei', 'Helvetica Neue', SimSun, SimHei, Arial,
+          Helvetica, Tahoma, Verdana, Georgia;
+      }
+      .box {
+        width: 1230px;
+        height: 440px;
+        margin: 50px auto;
+        /* background-color: pink; */
+        padding-top: 20px;
+      }
+
+      .clearfix:after {
+        /*伪元素是行内元素 正常浏览器清除浮动方法*/
+        content: '';
+        display: block;
+        clear: both;
+        height: 0; /*解决浏览器兼容问题*/
+        visibility: hidden; /*解决浏览器兼容问题*/
+      }
+
+      .box .item {
+        width: 410px;
+        padding: 0 15px;
+        background-color: #fff;
+        float: left;
+      }
+
+      .box .item .header {
+        height: 39px;
+        line-height: 39px;
+      }
+
+      .box .item .header .info {
+        float: left;
+      }
+
+      .box .item .header .info span {
+        color: #333;
+        font-size: 24px;
+      }
+      .box .item .header .more {
+        float: right;
+      }
+
+      .box .item .header .more span {
+        color: #999;
+        font-size: 14px;
+      }
+
+      .box .item .header .more span:hover {
+        text-decoration: underline;
+      }
+
+      .box .item .header img {
+        /* 让文字和图片以中线对齐 */
+        vertical-align: middle;
+      }
+
+      .box .item .header .info img {
+        margin-right: 6px;
+        top: -4px;
+        position: relative;
+      }
+
+      .box .item .header .info span:hover {
+        color: #940000;
+        text-decoration: underline;
+      }
+
+      .box .item .newslist li {
+        /* 取消小圆点 */
+        list-style: none;
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px dotted #ddd;
+        background-image: url(./images/icons.png);
+        background-repeat: no-repeat;
+        background-position: left 26px;
+        padding-left: 10px;
+      }
+      /* 修改li前面的小圆点样式 */
+      .box .item .newslist li::marker {
+        /* color: red; */
+      }
+
+      .box .item .newslist li .title {
+        float: left;
+      }
+
+      .box .item .newslist li .title:hover {
+        color: #ff0000;
+        text-decoration: underline;
+      }
+
+      .box .item .newslist li .date {
+        float: right;
+        color: #999;
+      }
+
+      .box .item .newslist li span {
+        color: #222;
+      }
+
+      .school img {
+        width: 180px;
+        height: 230px;
+        float: left;
+      }
+      .school img:first-child {
+        margin-right: 20px;
+      }
+
+      .school img:hover {
+        transition: all 0.4s;
+        transform: translateY(-10px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="item">
+        <div class="header clearfix">
+          <div class="info">
+            <img src="./images/icons-kycz.png" alt="" />
+            <span>院校动态</span>
+          </div>
+          <div class="more">
+            <span>更多</span>
+            <img src="./images/icons-more.png" alt="" />
+          </div>
+        </div>
+        <ul class="newslist">
+          <li class="clearfix">
+            <span class="title">初等教育学院召开2023年秋季资助培训…</span>
+            <span class="date">09-20</span>
+          </li>
+          <li class="clearfix">
+            <span class="title">初等教育学院召开2023年秋季资助培训…</span>
+            <span class="date">09-20</span>
+          </li>
+          <li class="clearfix">
+            <span class="title">初等教育学院召开2023年秋季资助培训…</span>
+            <span class="date">09-20</span>
+          </li>
+          <li class="clearfix">
+            <span class="title">初等教育学院召开2023年秋季资助培训…</span>
+            <span class="date">09-20</span>
+          </li>
+          <li class="clearfix">
+            <span class="title">初等教育学院召开2023年秋季资助培训…</span>
+            <span class="date">09-20</span>
+          </li>
+          <li class="clearfix">
+            <span class="title">初等教育学院召开2023年秋季资助培训…</span>
+            <span class="date">09-20</span>
+          </li>
+
+          <li class="clearfix">
+            <span class="title">初等教育学院召开2023年秋季资助培训…</span>
+            <span class="date">09-20</span>
+          </li>
+        </ul>
+      </div>
+      <div class="item">
+        <div class="header clearfix">
+          <div class="info">
+            <img src="./images/icons-kycz.png" alt="" />
+            <span>院校动态</span>
+          </div>
+          <div class="more">
+            <span>更多</span>
+            <img src="./images/icons-more.png" alt="" />
+          </div>
+        </div>
+        <ul class="newslist">
+          <li class="clearfix">
+            <span class="title">初等教育学院召开2023年秋季资助培训…</span>
+            <span class="date">09-20</span>
+          </li>
+          <li class="clearfix">
+            <span class="title">初等教育学院召开2023年秋季资助培训…</span>
+            <span class="date">09-20</span>
+          </li>
+          <li class="clearfix">
+            <span class="title">初等教育学院召开2023年秋季资助培训…</span>
+            <span class="date">09-20</span>
+          </li>
+          <li class="clearfix">
+            <span class="title">初等教育学院召开2023年秋季资助培训…</span>
+            <span class="date">09-20</span>
+          </li>
+          <li class="clearfix">
+            <span class="title">初等教育学院召开2023年秋季资助培训…</span>
+            <span class="date">09-20</span>
+          </li>
+          <li class="clearfix">
+            <span class="title">初等教育学院召开2023年秋季资助培训…</span>
+            <span class="date">09-20</span>
+          </li>
+
+          <li class="clearfix">
+            <span class="title">初等教育学院召开2023年秋季资助培训…</span>
+            <span class="date">09-20</span>
+          </li>
+        </ul>
+      </div>
+      <div class="item clearfix school">
+        <img src="./images/school.jpg" alt="" />
+        <img src="./images/school.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
